@@ -82,4 +82,4 @@ Start the development server:
 npm run dev
 ```
 
-Visit [http://localhost:3000](http://localhost:3000) to explore the Book Tracker frontend.
+Visit [coming soon](coming soon) to explore the Book Tracker frontend.
