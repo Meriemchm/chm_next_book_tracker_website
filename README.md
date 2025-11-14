@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Book Tracker Frontend
 
-## Getting Started
+A flexible and reusable frontend for a Book Tracking and Note Sharing App, built with Next.js, TailwindCSS, Zustand, React Hook Form, Zod, and React Hot Toast.
+Users can create accounts, track their books, write notes, and choose whether to make their notes private or public to share with others.
 
-First, run the development server:
+## Tech Stack
+
+* Next.js – React framework for building scalable web applications
+* TailwindCSS – Utility-first CSS framework for styling
+* Zustand – Lightweight state management
+* React Hook Form – Form management and validation
+* Zod – Schema validation for forms
+* React Hot Toast – Toast notifications for UI feedback
+* Axios – HTTP client for API calls
+
+## Setup & Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Meriemchm/chm_next_book_tracker_website.git
+cd chm_next_book_tracker_website
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure environment variables
+
+Create a **`.env`** file in the root directory and add the following:
+
+```
+NEXT_PUBLIC_API_URL=https://chm-book-tracker-backend.onrender.com/api
+```
+
+* `NEXT_PUBLIC_API_URL`: Base URL for the backend API
+
+### 4. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the frontend.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* Global modal system using Zustand
+* Animated components with GSAP
+* Form validation with React Hook Form + Zod
+* Toast notifications with React Hot Toast
+* API integration with Axios
+* Responsive UI with TailwindCSS
 
-## Learn More
+## Folder Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+ ├── app/            → Next.js pages and layout
+ ├── components/     → Reusable UI components
+ ├── hooks/          → Custom hooks (e.g., GSAP animations)
+ ├── store/          → Zustand stores for global state
+ ├── schemas/        → Zod schemas for form validation
+ └── lib/            → utilities
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* Use Zustand stores to manage global state like modal visibility, user session, and book data.
+* Use React Hook Form + Zod for all form handling and validation.
+* Use Axios to communicate with the backend API.
+* Use React Hot Toast for feedback messages on user actions.
 
-## Deploy on Vercel
+## Running the App
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Start the development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run dev
+```
+
+Visit [http://localhost:3000](http://localhost:3000) to explore the Book Tracker frontend.
