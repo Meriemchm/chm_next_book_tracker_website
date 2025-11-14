@@ -74,12 +74,6 @@ src/
 * Use Axios to communicate with the backend API.
 * Use React Hot Toast for feedback messages on user actions.
 
-## Running the App
-
-Start the development server:
-
-```bash
-npm run dev
-```
+---
 
 Visit [coming soon](coming soon) to explore the Book Tracker frontend.
